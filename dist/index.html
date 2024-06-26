@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./main.js" defer></script>
+    <title>website_cosmetics</title>
+    <link rel="stylesheet" href="/dist/css/normalize.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- блок -->
+    <header class="header">
+      <div class="body">
+        <!-- элемент -->
+        <h2 class="header__logo logo">Dudeshape</h2>
+        <!-- блок -->
+        <nav class="header__menu menu">
+          <ul class="header__list menu__list">
+            <li class="menu__item">
+              <!-- элемент link и модификатор active -->
+              <a href="#" class="menu__link menu__link_active">Home</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Products</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">About Us</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="block-user">
+          <img src="./img/icons/user.svg" alt="user" class="block-user__icon" />
+          <img
+            src="./img/icons/basket.svg"
+            alt="basket"
+            class="block-user__icon"
+          />
+          <img
+            src="./img/icons/Frame.svg"
+            alt="vector"
+            class="block-user__icon block-user__icon_transform"
+          />
+        </div>
+      </div>
+    </header>
+    <div class="section">
+      <div class="container">
+        <div class="container__block">
+          <div class="about">
+            <div class="about__title title">
+              Get Your Best Cosmetic Products Here
+            </div>
+            <div class="about__subtitle subtitle">
+              Lorem Ipsum is simply dummy text of the printing and typesetting
+              industry. Lorem Ipsum has been the industry's standard dummy
+            </div>
+          </div>
+          <!-- Делайте покупки прямо сейчас - Shop Now -->
+          <form action="#" class="search-form">
+            <input
+              type="text"
+              class="search-form__text-field"
+              placeholder="Search..."
+            />
+            <button class="search-form__btn default-btn">
+              <img src="./img/icons/Search.svg" alt="search" />
+            </button>
+          </form>
+          <button class="search-form__btn-shop default-btn">Shop Now</button>
+        </div>
+        <div class="control">
+          <img
+            src="./img/icons/arrows/Arrow - left.svg"
+            alt="arrow-left"
+            class="control__arrow-left"
+          />
+          <img
+            src="./img/icons/arrows/Arrow - Right.svg"
+            alt="arrow-right"
+            class="control__arrow-right"
+          />
+        </div>
+      </div>
+      <img src="./img/cosmetics.png" alt="cosmetics" class="section__img" />
+    </div>
+    <!-- удалить -->
+    <div class="section">
+      <div class="container">
+        <div class="about">
+          <div class="about__title title">
+            Get Your Best Cosmetic Products Here
+          </div>
+          <div class="about__subtitle subtitle">
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy
+          </div>
+        </div>
+        <!-- Делайте покупки прямо сейчас - Shop Now -->
+        <form action="#" class="search-form">
+          <input
+            type="text"
+            class="search-form__text-field"
+            placeholder="Search..."
+          />
+          <button class="search-form__btn default-btn">
+            <img src="./img/icons/Search.svg" alt="search" />
+          </button>
+        </form>
+        <button class="search-form__btn-shop default-btn">Shop Now</button>
+        <div class="control">
+          <img
+            src="./img/icons/arrows/Arrow - left.svg"
+            alt="arrow-left"
+            class="control__arrow-left"
+          />
+          <img
+            src="./img/icons/arrows/Arrow - Right.svg"
+            alt="arrow-right"
+            class="control__arrow-right"
+          />
+        </div>
+      </div>
+      <img src="./img/cosmetics.png" alt="cosmetics" class="section__img" />
+    </div>
+    <!-- menu -->
+    <menu class="menu-side">
+      <a class="menu-side__close" href="#close">X</a>
+      <div class="menu-side__block">
+        <ul class="menu-side__list menu__list">
+          <li class="menu-side__item">
+            <!-- элемент link и модификатор active -->
+            <a
+              href="#"
+              class="menu__link menu__link_active menu-side__link_white"
+              >Home</a
+            >
+          </li>
+          <li class="menu-side__item">
+            <a href="#" class="menu__link menu-side__link_white">Products</a>
+          </li>
+          <li class="menu-side__item">
+            <a href="#" class="menu__link menu-side__link_white">About Us</a>
+          </li>
+          <li class="menu-side__item">
+            <a href="#" class="menu__link menu-side__link_white">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </menu>
+  </body>
+</html>

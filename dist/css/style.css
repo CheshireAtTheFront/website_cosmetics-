@@ -1,0 +1,407 @@
+:root {
+  --black-color: #222222;
+  --white-color: #ffffff;
+  --base-color-btn: #402f2c;
+  --base-color-text: #555555;
+  --base-color-active: #ff4646;
+  --base-color-hover: #cca9a9;
+  --search-color: #999999;
+  --arrows-com-color-active: #6fb587;
+  --arrows-com-color: #e9f4ed;
+  --transition-duration: 0.3s;
+  --medium: 500;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  font-size: 16px;
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: var(--regular);
+  font-style: normal;
+  color: #000000;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* шапка */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 138px;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.856);
+}
+
+.body,
+.container {
+  margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
+  max-width: 1240px;
+  height: inherit;
+}
+
+.body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* логотип */
+.logo {
+  border-bottom: 2.5px solid #000000;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.header__logo {
+  width: 128px;
+  height: 30px;
+}
+
+/* меню */
+.header__menu {
+  width: 376px;
+}
+
+.header__list {
+  align-items: center;
+  gap: 40px;
+}
+
+.menu__list {
+  display: flex;
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.menu__link {
+  transition: color var(--transition-duration);
+  color: var(--black-color);
+}
+
+.menu__link:hover {
+  color: var(--base-color-hover);
+}
+
+.menu__link_active {
+  color: var(--base-color-active);
+}
+
+/* иконки в шапке */
+.block-user__icon,
+.control__arrow-left,
+.control__arrow-right {
+  cursor: pointer;
+}
+
+.block-user,
+.control {
+  display: flex;
+  justify-content: space-between;
+}
+
+.block-user {
+  width: 60px;
+}
+
+.block-user__icon {
+  width: 24px;
+  height: 24px;
+}
+
+.block-user__icon_transform {
+  display: none;
+}
+
+.menu-side__block,
+.menu-side__list {
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-side {
+  position: fixed;
+  top: 80px;
+  right: 10px;
+  padding: 0;
+  width: 220px;
+  height: 320px;
+  border: 5px solid grey;
+  border-radius: 50%;
+  background-color: rgba(85, 79, 79, 0.897);
+  z-index: 2;
+  transition-duration: 1s;
+  transition-property: transform;
+  -webkit-transform: translateX(110%);
+  transform: translateX(110%);
+}
+
+.menu-side__block {
+  justify-content: center;
+  height: 100%;
+}
+
+.menu-side__list {
+  align-items: center;
+  line-height: 50px;
+}
+
+.menu-side__link_white {
+  color: #ffffff;
+}
+
+.menu-side__close {
+  position: absolute;
+  color: var(--black-color);
+}
+
+.menu-side_active {
+  transition-duration: 1s;
+  transition-property: transform;
+  transform: translateX(0%);
+}
+
+/* кнопки */
+/* добполнительная линия добавляется здесь для анимации */
+.default-btn {
+  padding: 16px 32px;
+  border: none;
+  /* здесь доп. линия прозрачная */
+  outline: 1px solid transparent;
+  outline-offset: 2px;
+  cursor: pointer;
+  font-size: 1.125rem;
+  font-weight: var(--medium);
+  transition: outline-color var(--transition-duration);
+  color: var(--white-color);
+  background-color: var(--base-color-btn);
+}
+
+.default-btn:focus-visible {
+  /* при фокусе доп. линия окрашивается */
+  outline-color: var(--base-color-btn);
+}
+
+.default-btn:hover {
+  background-color: var(--base-color-hover);
+}
+
+.default-btn:active {
+  -webkit-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.57);
+  -moz-box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.57);
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, 0.57);
+}
+
+/* заголовки */
+.section {
+  position: relative;
+  margin-top: 138px;
+  height: 609px;
+  background-color: #f9f6f5;
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: var(--medium);
+}
+
+.subtitle {
+  line-height: 32px;
+  font-size: 1.25rem;
+  color: var(--base-color-text);
+}
+
+.container__block {
+  position: relative;
+  max-width: 621px;
+  z-index: 1;
+}
+
+.about {
+  padding-top: 40px;
+}
+
+.about__title,
+.about__subtitle {
+  margin-bottom: 30px;
+}
+
+.about__subtitle {
+  max-width: 516px;
+}
+
+/* форма поиска */
+.search-form,
+.subscribe-form {
+  position: relative;
+}
+
+.search-form {
+  margin-bottom: 60px;
+  width: 100%;
+  max-width: 326px;
+  height: 48px;
+}
+
+.search-form__text-field,
+.subscribe-form__text-field {
+  width: inherit;
+  height: inherit;
+  border: none;
+}
+
+.search-form__text-field {
+  padding: 14px 8px 14px 16px;
+  font-size: 0.875rem;
+}
+
+.search-form__text-field::placeholder {
+  color: var(--search-color);
+}
+
+.search-form__btn,
+.subscribe-form__btn {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.search-form__btn {
+  padding: 8px;
+  width: 32px;
+  height: 32px;
+}
+
+.search-form__btn-shop {
+  position: relative;
+  z-index: 1;
+}
+
+.section__img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+/* форма обратной связи */
+.subscribe-form {
+  width: 386px;
+  height: 56px;
+}
+
+.subscribe-form__text-field {
+  padding: 18px 8px 18px 18px;
+}
+
+.subscribe-form__text-field::placeholder {
+  color: var(--base-color-text);
+}
+
+.subscribe-form__btn {
+  width: 103px;
+  height: 40px;
+  padding: 10px 19px;
+  font-size: 0.875rem;
+  font-weight: var(--medium);
+  color: var(--white-color);
+}
+
+/* стрелки */
+.control {
+  position: absolute;
+  bottom: 0;
+  right: 43%;
+  z-index: 1;
+  width: 96px;
+}
+
+/* @media */
+@media (min-width: 1241px) {
+  .title {
+    font-size: 3.5rem;
+  }
+}
+
+@media (max-width: 1240px) and (min-width: 321px) {
+  .title {
+    font-size: calc(1.8rem + 28 * (100vw - 320px) / 920);
+  }
+
+  .subtitle {
+    font-size: calc(1rem + 4 * (100vw - 320px) / 920);
+  }
+}
+
+@media (max-width: 566px) and (min-width: 362px) {
+  .control {
+    right: 42%;
+  }
+}
+
+@media (max-width: 420px) {
+  .search-form {
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .subtitle {
+    line-height: 25px;
+  }
+
+  .about__title {
+    margin-bottom: 15px;
+  }
+
+  .control {
+    right: 39%;
+  }
+}
+
+@media (max-width: 320px) {
+  .title {
+    font-size: 1.7rem;
+  }
+
+  .subtitle {
+    font-size: 0.875rem;
+  }
+
+  .control {
+    right: 36%;
+  }
+}
+
+@media (max-width: 740px) {
+  .header__menu {
+    display: none;
+  }
+
+  .block-user {
+    width: 120px;
+  }
+
+  .block-user__icon_transform {
+    display: block;
+  }
+}
