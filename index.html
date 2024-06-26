@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./main.js" defer></script>
+    <script src="./dist/main.js" defer></script>
     <title>website_cosmetics</title>
     <link rel="stylesheet" href="/dist/css/normalize.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -12,7 +12,8 @@
       href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./dist/css/normalize.css" />
+    <link rel="stylesheet" href="./dist/css/style.css" />
   </head>
   <body>
     <!-- блок -->
@@ -39,14 +40,18 @@
           </ul>
         </nav>
         <div class="block-user">
-          <img src="./img/icons/user.svg" alt="user" class="block-user__icon" />
           <img
-            src="./img/icons/basket.svg"
+            src="./dist/img/icons/user.svg"
+            alt="user"
+            class="block-user__icon"
+          />
+          <img
+            src="./dist/img/icons/basket.svg"
             alt="basket"
             class="block-user__icon"
           />
           <img
-            src="./img/icons/Frame.svg"
+            src="./dist/img/icons/Frame.svg"
             alt="vector"
             class="block-user__icon block-user__icon_transform"
           />
@@ -73,25 +78,29 @@
               placeholder="Search..."
             />
             <button class="search-form__btn default-btn">
-              <img src="./img/icons/Search.svg" alt="search" />
+              <img src="./dist/img/icons/Search.svg" alt="search" />
             </button>
           </form>
           <button class="search-form__btn-shop default-btn">Shop Now</button>
         </div>
         <div class="control">
           <img
-            src="./img/icons/arrows/Arrow - left.svg"
+            src="./dist/img/icons/arrows/Arrow - left.svg"
             alt="arrow-left"
             class="control__arrow-left"
           />
           <img
-            src="./img/icons/arrows/Arrow - Right.svg"
+            src="./dist/img/icons/arrows/Arrow - Right.svg"
             alt="arrow-right"
             class="control__arrow-right"
           />
         </div>
       </div>
-      <img src="./img/cosmetics.png" alt="cosmetics" class="section__img" />
+      <img
+        src="./dist/img/cosmetics.png"
+        alt="cosmetics"
+        class="section__img"
+      />
     </div>
     <!-- удалить -->
     <div class="section">
