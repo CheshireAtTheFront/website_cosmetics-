@@ -214,6 +214,8 @@ a {
 
 /* заголовки */
 .section {
+  display: flex;
+  justify-content: center;
   position: relative;
   margin-top: 138px;
   height: 609px;
@@ -330,7 +332,6 @@ a {
 .control {
   position: absolute;
   bottom: 0;
-  right: 43%;
   z-index: 1;
   width: 96px;
 }
@@ -352,11 +353,9 @@ a {
   }
 }
 
-@media (max-width: 566px) and (min-width: 362px) {
-  .control {
-    right: 42%;
-  }
-}
+/* @media (max-width: 566px) and (min-width: 362px) {
+
+} */
 
 @media (max-width: 420px) {
   .search-form {
@@ -372,10 +371,6 @@ a {
   .about__title {
     margin-bottom: 15px;
   }
-
-  .control {
-    right: 39%;
-  }
 }
 
 @media (max-width: 320px) {
@@ -385,10 +380,6 @@ a {
 
   .subtitle {
     font-size: 0.875rem;
-  }
-
-  .control {
-    right: 36%;
   }
 }
 
