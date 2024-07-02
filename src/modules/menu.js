@@ -2,7 +2,6 @@ const menu = () => {
   const body = document.querySelector("body");
   const menu = document.querySelector(".menu-side");
 
-  // деллегирование
   body.addEventListener("click", (e) => {
     let target = e.target;
 

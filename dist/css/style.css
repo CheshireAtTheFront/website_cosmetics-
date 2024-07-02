@@ -19,7 +19,7 @@ html {
 *,
 ::after,
 ::before {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 body {
@@ -51,11 +51,9 @@ a {
 }
 
 .body,
-.container {
+.slider-container {
   margin: 0 auto;
   padding: 0 20px;
-  width: 100%;
-  max-width: 1240px;
   height: inherit;
 }
 
@@ -63,6 +61,8 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  max-width: 1240px;
 }
 
 /* логотип */
@@ -219,7 +219,10 @@ a {
   position: relative;
   margin-top: 138px;
   height: 609px;
-  background-color: #f9f6f5;
+}
+
+.slider-container {
+  width: 100%;
 }
 
 .title {
@@ -233,13 +236,69 @@ a {
   color: var(--base-color-text);
 }
 
-.container__block {
+.slider-container__slider-track {
+  height: inherit;
+}
+
+/* стандарт */
+.section {
+  overflow: hidden;
+}
+
+/* .slider-container {
+  overflow: hidden;
+} */
+
+.slider-container__slider-track {
+  display: flex;
+  position: absolute;
+  left: 0;
+  width: inherit;
+  height: inherit;
+  transition: 0.5s;
+}
+
+.slider-container__block {
+  position: relative;
+  height: 100%;
+  background-color: #f9f6f5;
+}
+
+/* стандарт */
+
+/* **************************************************** */
+/* .block-slider_active {
+  opacity: 1;
+  transition: left 500ms linear;
+  transition: opacity 500ms linear;
+} */
+
+/* .slider-container__block {
+  position: absolute;
+  float: left;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 500ms linear;
+} */
+
+/* .slider-container .block-slider_active {
+  opacity: 1;
+  transition: left 500ms linear;
+} */
+
+/* .d-none {
+  display: none;
+} */
+/* **************************************************** */
+
+.block-description {
   position: relative;
   max-width: 621px;
+  margin-left: 100px;
   z-index: 1;
 }
 
-.about {
+.block-description__about {
   padding-top: 40px;
 }
 
@@ -299,9 +358,9 @@ a {
   z-index: 1;
 }
 
-.section__img {
+.slider-container__img {
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
 }
 
@@ -334,6 +393,12 @@ a {
   bottom: 0;
   z-index: 1;
   width: 96px;
+}
+
+.control__btn {
+  padding: 0;
+  border: none;
+  background-color: transparent;
 }
 
 /* @media */
