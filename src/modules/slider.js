@@ -1,43 +1,32 @@
 const slider = () => {
   const containerSlider = document.querySelector(".slider-container");
   const sliderTrack = document.querySelector(".slider-container__slider-track");
-  const blockSlider = document.querySelectorAll(".slider-container__block");
+  const itemsSlider = document.querySelectorAll(".slider-container__block");
   // кнопки
   const arrowLeft = document.querySelector(".control__arrow-left");
   const arrowRight = document.querySelector(".control__arrow-right");
-  // сколько элементов показывать
-  const slidesToShow = 1;
-  // сколько элементов будет проскроливаться
-  const slidesToScroll = 1;
   // кол-во блоков
-  const itemsCount = blockSlider.length;
+  const itemsCount = itemsSlider.length;
   // ширина каждого блока
-  const blockWidth = containerSlider.offsetWidth / slidesToShow;
+  const itemWidth = containerSlider.clientWidth;
   // на сколько нужно проскролить блок
-  const movePosition = slidesToScroll * blockWidth;
-
+  const movePosition = itemWidth;
   // для определения позиции слайда при скроле
   let position = 0;
 
-  blockSlider.forEach((item) => {
-    item.style.minWidth = `${blockWidth}px`;
-  });
-
-  // всплытие дл стрелочной функции происходит если она вызывается в addEventListener
+  // скрол слайда на нужную позицию
   const setPosition = () => {
     sliderTrack.style.transform = `translateX(${position}px)`;
   };
 
   arrowLeft.addEventListener("click", () => {
     // изменения перемещения позиции
-    counter--;
     position += movePosition;
     setPosition();
     checkBtns();
   });
 
   arrowRight.addEventListener("click", () => {
-    counter++;
     position -= movePosition;
     setPosition();
     checkBtns();
@@ -48,7 +37,7 @@ const slider = () => {
     if (position === 0) {
       arrowLeft.style.opacity = 0.5;
       arrowLeft.disabled = true;
-    } else if (position <= -(itemsCount - slidesToShow) * blockWidth) {
+    } else if (position <= -(itemsCount - 1) * itemWidth) {
       arrowRight.style.opacity = 0.5;
       arrowRight.disabled = true;
     } else {
