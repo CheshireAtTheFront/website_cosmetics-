@@ -253,6 +253,7 @@ p {
   display: flex;
   position: absolute;
   left: 0;
+  width: 100%;
   height: inherit;
   transition: 0.5s;
 }
@@ -460,6 +461,7 @@ p {
 }
 
 /* @media */
+
 @media (max-width: 1630px) {
   .block-description {
     left: 5.9%;
