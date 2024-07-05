@@ -39,16 +39,20 @@
           </ul>
         </nav>
         <div class="block-user">
-          <img
-            src="./dist/img/icons/user.svg"
-            alt="user"
-            class="block-user__icon"
-          />
-          <img
-            src="./dist/img/icons/basket.svg"
-            alt="basket"
-            class="block-user__icon"
-          />
+          <a href="#" class="block-user__link" title="Войти">
+            <img
+              src="./dist/img/icons/user.svg"
+              alt="user"
+              class="block-user__icon"
+            />
+          </a>
+          <a href="#" class="block-user__link-basket">
+            <img
+              src="./dist/img/icons/basket.svg"
+              alt="basket"
+              class="block-user__icon"
+            />
+          </a>
           <img
             src="./dist/img/icons/Frame.svg"
             alt="vector"
@@ -210,5 +214,59 @@
         </ul>
       </div>
     </menu>
+    <!-- pop up -->
+    <div class="popup">
+      <div class="popup__container">
+        <!-- Войти -->
+        <div class="popup__body">
+          <p class="popup__title">Войти</p>
+          <form action="" class="popup__form">
+            <input
+              type="text"
+              name="text-name"
+              class="popup__name subscribe-form__text-field"
+              placeholder="Enter name"
+            />
+            <input
+              type="text"
+              name="text-email"
+              class="popup__email subscribe-form__text-field"
+              placeholder="Enter email"
+            />
+            <button class="popup__btn-enter default-btn">Войти</button>
+            <button class="popup__btn-register default-btn">
+              Зарегистрироваться
+            </button>
+          </form>
+          <div class="popup__close">&#10006</div>
+        </div>
+        <!-- Зарегистрироваться -->
+        <div class="popup__body popup__body_none">
+          <p class="popup__title">Зарегистрироваться</p>
+          <form action="" class="popup__form">
+            <input
+              type="text"
+              name="text-name"
+              class="popup__name subscribe-form__text-field"
+              placeholder="Enter name"
+            />
+            <input
+              type="text"
+              name="num-tel"
+              class="popup__telephone subscribe-form__text-field"
+              placeholder="Enter telephone"
+            />
+            <input
+              type="text"
+              name="text-email"
+              class="popup__email subscribe-form__text-field"
+              placeholder="Enter email"
+            />
+            <button class="popup__btn-register">Зарегистрироваться</button>
+          </form>
+          <div class="popup__close">&#10006</div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
