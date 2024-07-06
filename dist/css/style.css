@@ -444,7 +444,8 @@ p {
   margin-top: 10px;
 }
 
-.popup__btn-enter {
+.popup__btn-enter,
+.popup__btn-register_mrg {
   margin-top: 40px;
 }
 
