@@ -220,52 +220,57 @@
         <!-- Войти -->
         <div class="popup__body">
           <p class="popup__title">Enter</p>
-          <form action="" class="popup__form">
+          <form id="form-entry" name="user_form" class="popup__form">
             <input
               type="text"
-              name="text-name"
+              name="user_name"
               class="popup__name subscribe-form__text-field"
               placeholder="Enter name"
+              required
             />
             <input
-              type="text"
-              name="text-email"
+              type="email"
+              name="user_email"
               class="popup__email subscribe-form__text-field"
               placeholder="Enter email"
+              required
             />
-            <button class="popup__btn-enter default-btn">Enter</button>
-            <button class="popup__btn-register default-btn">
+            <button type="submit" class="popup__btn-enter default-btn">Enter</button>
+            <!-- <button type="submit" class="popup__btn-register default-btn">
               Register
-            </button>
+            </button> -->
           </form>
           <div class="popup__close">&#10006</div>
         </div>
         <!-- Зарегистрироваться -->
-        <div class="popup__body popup__body_none">
+        <!-- <div class="popup__body popup__body_none">
           <p class="popup__title">Register</p>
-          <form action="" class="popup__form">
+          <form id="form-register" name="user_form" class="popup__form">
             <input
               type="text"
-              name="text-name"
+              name="user_name"
               class="popup__name subscribe-form__text-field"
               placeholder="Enter name"
+              required
             />
             <input
               type="text"
-              name="num-tel"
+              name="user_tel"
               class="popup__telephone subscribe-form__text-field"
               placeholder="Enter telephone"
+              required
             />
             <input
               type="text"
-              name="text-email"
+              name="user_email"
               class="popup__email subscribe-form__text-field"
               placeholder="Enter email"
+              required
             />
-            <button class="popup__btn-register popup__btn-register_mrg default-btn">Register</button>
+            <button type="submit" class="popup__btn-register popup__btn-register_mrg default-btn">Register</button>
           </form>
           <div class="popup__close">&#10006</div>
-        </div>
+        </div> -->
       </div>
     </div>
   </body>

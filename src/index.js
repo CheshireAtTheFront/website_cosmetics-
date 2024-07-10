@@ -9,6 +9,6 @@ menu();
 slider();
 formSearch();
 
-form();
+form({ idForm: "form-entry" });
 
 modal();
