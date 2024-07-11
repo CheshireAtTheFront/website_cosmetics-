@@ -19,7 +19,12 @@
     <header class="header">
       <div class="body">
         <!-- элемент -->
-        <h2 class="header__logo logo">Dudeshape</h2>
+        <!-- <h2 class="header__logo logo">Dudeshape</h2> -->
+        <img
+          src="./dist/img/icons/logo/Dudeshape.svg"
+          alt="logo"
+          class="header__logo logo"
+        />
         <!-- блок -->
         <nav class="header__menu menu">
           <ul class="header__list menu__list">
@@ -62,8 +67,9 @@
       </div>
     </header>
     <!-- /header -->
-    <!-- section -->
-    <div class="section">
+
+    <!-- slider-section -->
+    <div class="slider-section">
       <!-- окно (основа) -->
       <div class="slider-container">
         <!-- полоска которая будет перемещаться -->
@@ -92,7 +98,11 @@
                   <img src="./dist/img/icons/Search.svg" alt="search" />
                 </button>
               </form>
-              <a href="#" class="search-form__link-shop default-btn">
+              <a
+                href="#"
+                type="button"
+                class="search-form__link-shop default-btn"
+              >
                 Shop Now
               </a>
             </div>
@@ -125,9 +135,13 @@
                   <img src="./dist/img/icons/Search.svg" alt="search" />
                 </button>
               </form>
-              <button class="search-form__btn-shop default-btn">
+              <a
+                href="#"
+                type="button"
+                class="search-form__btn-shop default-btn"
+              >
                 Shop Now
-              </button>
+              </a>
             </div>
             <img
               src="./dist/img/png-transparent-assorted-brand-labeled-makeup-products-cosmetics-beauty-makeup-brush-make-up-artist-women-cosmetics-miscellaneous-women-accessories-indian-nude-women.png"
@@ -158,9 +172,13 @@
                   <img src="./dist/img/icons/Search.svg" alt="search" />
                 </button>
               </form>
-              <button class="search-form__btn-shop default-btn">
+              <a
+                href="#"
+                type="button"
+                class="search-form__btn-shop default-btn"
+              >
                 Shop Now
-              </button>
+              </a>
             </div>
             <img
               src="./dist/img/image.png"
@@ -188,7 +206,79 @@
         </button>
       </div>
     </div>
-    <!-- /section -->
+    <!-- /slider-section -->
+
+    <!-- section-partners -->
+    <div class="section-partners section">
+      <div class="section-partners__container">
+        <img
+          src="./dist/img/icons/partners/Airbnb Logo.svg"
+          alt="Airbnb"
+          class="section-partners__icon"
+        />
+        <img
+          src="./dist/img/icons/partners/Hubspot Logo.svg"
+          alt="HubSpot"
+          class="section-partners__icon"
+        />
+        <img
+          src="./dist/img/icons/partners/Google Logo.svg"
+          alt="Google"
+          class="section-partners__icon"
+        />
+        <img
+          src="./dist/img/icons/partners/Microsoft Logo.svg"
+          alt="Microsoft"
+          class="section-partners__icon"
+        />
+        <img
+          src="./dist/img/icons/partners/Walmart Logo.svg"
+          alt="Walmart"
+          class="section-partners__icon"
+        />
+        <img
+          src="./dist/img/icons/partners/FedEx Logo.svg"
+          alt="FedEx"
+          class="section-partners__icon"
+        />
+      </div>
+    </div>
+    <!-- /section-partners -->
+
+    <!--section-products -->
+    <div class="section-products section">
+      <div class="section-products__container container">
+        <div class="block-content">
+          <div class="block-content__desc">
+            <h2 class="block-content__title title">
+              The Perfect Beauty Of You
+            </h2>
+            <div class="block-content__text">
+              <p class="block-content__copyright subtitle">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.
+              </p>
+              <p class="block-content__copyright subtitle">
+                It has survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. Lorem
+                Ipsum is simply dummy text of the printing and typesetting
+                industry.
+              </p>
+            </div>
+            <a href="#" type="button" class="default-btn"> Shop Now </a>
+          </div>
+          <img
+            src="./dist/img/products/Rectangle 8.png"
+            alt="product"
+            class="block-content__img"
+          />
+        </div>
+      </div>
+    </div>
+    <!--/section-products -->
+
     <!-- menu -->
     <menu class="menu-side">
       <a class="menu-side__close" href="#close">X</a>
@@ -214,6 +304,8 @@
         </ul>
       </div>
     </menu>
+    <!-- /menu -->
+
     <!-- pop up -->
     <div class="popup">
       <div class="popup__container">
@@ -235,12 +327,15 @@
               placeholder="Enter email"
               required
             />
-            <button type="submit" class="popup__btn-enter default-btn">Enter</button>
+            <button type="submit" class="popup__btn-enter default-btn">
+              Enter
+            </button>
             <!-- <button type="submit" class="popup__btn-register default-btn">
               Register
             </button> -->
           </form>
-          <div class="popup__close">&#10006</div>
+          <div class="popup__close">X</div>
+          <!--&#10006  -->
         </div>
         <!-- Зарегистрироваться -->
         <!-- <div class="popup__body popup__body_none">
@@ -273,5 +368,6 @@
         </div> -->
       </div>
     </div>
+    <!-- /pop up -->
   </body>
 </html>
