@@ -10,11 +10,13 @@ const modal = () => {
   // закрывает модальное окно
   const closeModal = (e) => {
     let target = e.target;
-
-    if (target.matches(".popup__close")) {
+    if (
+      target.matches(".popup__close") ||
+      target.matches(".popup__container")
+    ) {
       popup.style.display = "none";
       // popupBodyNone.classList.add("popup__body_none");
-      popupBody.style.display = "flex";
+      // popupBody.style.display = "flex";
     }
     // переход в зону регестрации
     // if (target.matches(".popup__btn-register")) {

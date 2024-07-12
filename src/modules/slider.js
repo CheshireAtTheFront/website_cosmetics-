@@ -1,14 +1,14 @@
 const slider = () => {
-  const containerSlider = document.querySelector(".slider-container");
-  const sliderTrack = document.querySelector(".slider-container__slider-track");
-  const itemsSlider = document.querySelectorAll(".slider-container__block");
+  const bodySlider = document.querySelector(".slider-section__slider-body");
+  const sliderTrack = document.querySelector(".slider-section__slider-track");
+  const itemsSlider = document.querySelectorAll(".slider-section__block");
   // кнопки
   const arrowLeft = document.querySelector(".control__arrow-left");
   const arrowRight = document.querySelector(".control__arrow-right");
   // кол-во блоков
   const itemsCount = itemsSlider.length;
   // ширина каждого блока
-  const itemWidth = containerSlider.clientWidth;
+  const itemWidth = bodySlider.clientWidth;
   // на сколько нужно проскролить блок
   const movePosition = itemWidth;
   // для определения позиции слайда при скроле
