@@ -504,7 +504,10 @@ p {
 .section-evidence__block {
   display: flex;
   justify-content: space-between;
+  margin: 0 auto;
   padding: 58px 73px;
+  width: 100%;
+  max-width: 1380px;
 }
 
 .section-evidence__column {
