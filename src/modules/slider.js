@@ -1,10 +1,10 @@
 const slider = () => {
-  const bodySlider = document.querySelector(".slider-section__slider-body");
-  const sliderTrack = document.querySelector(".slider-section__slider-track");
-  const itemsSlider = document.querySelectorAll(".slider-section__block");
+  const bodySlider = document.querySelector(".our-team__slider-body");
+  const sliderTrack = document.querySelector(".our-team__slider-track");
+  const itemsSlider = document.querySelectorAll(".our-team__slide");
   // кнопки
-  const arrowLeft = document.querySelector(".control__arrow-left");
-  const arrowRight = document.querySelector(".control__arrow-right");
+  const arrowLeft = document.querySelector("#btn-left");
+  const arrowRight = document.querySelector("#btn-right");
   // кол-во блоков
   const itemsCount = itemsSlider.length;
   // ширина каждого блока

@@ -17,208 +17,106 @@
   <body>
     <!-- main -->
     <main class="main">
-      <!-- container-header -->
-      <div class="container-header">
-        <!-- header -->
-        <header class="header">
-          <div class="header__body">
-            <!-- элемент -->
-            <!-- <h2 class="header__logo logo">Dudeshape</h2> -->
+      <!-- header -->
+      <header class="header">
+        <div class="header__body">
+          <!-- элемент -->
+          <!-- <h2 class="header__logo logo">Dudeshape</h2> -->
+          <img
+            src="./dist/img/icons/logo/Dudeshape.svg"
+            alt="logo"
+            class="header__logo logo"
+          />
+          <!-- блок -->
+          <nav class="header__menu menu">
+            <ul class="header__list menu__list">
+              <li class="menu__item">
+                <!-- элемент link и модификатор active -->
+                <a href="#" class="menu__link menu__link_active">Home</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Products</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">About Us</a>
+              </li>
+              <li class="menu__item">
+                <a href="#" class="menu__link">Contact Us</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="block-user">
+            <a href="#" class="block-user__link" title="Войти">
+              <img
+                src="./dist/img/icons/user.svg"
+                alt="user"
+                class="block-user__icon"
+              />
+            </a>
+            <a href="#" class="block-user__link-basket">
+              <img
+                src="./dist/img/icons/basket.svg"
+                alt="basket"
+                class="block-user__icon"
+              />
+            </a>
             <img
-              src="./dist/img/icons/logo/Dudeshape.svg"
-              alt="logo"
-              class="header__logo logo"
+              src="./dist/img/icons/Frame.svg"
+              alt="vector"
+              class="block-user__icon block-user__icon_transform"
             />
-            <!-- блок -->
-            <nav class="header__menu menu">
-              <ul class="header__list menu__list">
-                <li class="menu__item">
-                  <!-- элемент link и модификатор active -->
-                  <a href="#" class="menu__link menu__link_active">Home</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Products</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">About Us</a>
-                </li>
-                <li class="menu__item">
-                  <a href="#" class="menu__link">Contact Us</a>
-                </li>
-              </ul>
-            </nav>
-            <div class="block-user">
-              <a href="#" class="block-user__link" title="Войти">
-                <img
-                  src="./dist/img/icons/user.svg"
-                  alt="user"
-                  class="block-user__icon"
-                />
-              </a>
-              <a href="#" class="block-user__link-basket">
-                <img
-                  src="./dist/img/icons/basket.svg"
-                  alt="basket"
-                  class="block-user__icon"
-                />
-              </a>
-              <img
-                src="./dist/img/icons/Frame.svg"
-                alt="vector"
-                class="block-user__icon block-user__icon_transform"
-              />
-            </div>
-          </div>
-        </header>
-        <!-- /header -->
-
-        <!-- slider-section -->
-        <div class="slider-section">
-          <!-- окно (основа) -->
-          <div class="slider-section__slider-body">
-            <!-- полоска которая будет перемещаться -->
-            <div class="slider-section__slider-track">
-              <!-- элементы слайда -->
-              <div class="slider-section__block">
-                <div class="slider-section__slide">
-                  <div class="block-description">
-                    <div class="block-description__about about">
-                      <h1 class="about__title title">
-                        Get Your Best Cosmetic Products Here
-                      </h1>
-                      <p class="about__subtitle subtitle">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy
-                      </p>
-                    </div>
-                    <!-- Делайте покупки прямо сейчас - Shop Now -->
-                    <form action="#" class="search-form">
-                      <input
-                        type="text"
-                        class="search-form__text-field"
-                        placeholder="Search..."
-                      />
-                      <button class="search-form__btn default-btn">
-                        <img src="./dist/img/icons/Search.svg" alt="search" />
-                      </button>
-                    </form>
-                    <a
-                      href="#"
-                      type="button"
-                      class="search-form__link-shop default-btn"
-                    >
-                      Shop Now
-                    </a>
-                  </div>
-                  <img
-                    src="./dist/img/cosmetics.png"
-                    alt="cosmetics"
-                    class="slider-section__img"
-                  />
-                </div>
-              </div>
-              <div class="slider-section__block">
-                <div class="slider-section__slide">
-                  <div class="block-description">
-                    <div class="block-description__about about">
-                      <h1 class="about__title title">
-                        Get Your Best Cosmetic Products Here
-                      </h1>
-                      <p class="about__subtitle subtitle">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy.
-                      </p>
-                    </div>
-                    <!-- Делайте покупки прямо сейчас - Shop Now -->
-                    <form action="#" class="search-form">
-                      <input
-                        type="text"
-                        class="search-form__text-field"
-                        placeholder="Search..."
-                      />
-                      <button class="search-form__btn default-btn">
-                        <img src="./dist/img/icons/Search.svg" alt="search" />
-                      </button>
-                    </form>
-                    <a
-                      href="#"
-                      type="button"
-                      class="search-form__btn-shop default-btn"
-                    >
-                      Shop Now
-                    </a>
-                  </div>
-                  <img
-                    src="./dist/img/png-transparent-assorted-brand-labeled-makeup-products-cosmetics-beauty-makeup-brush-make-up-artist-women-cosmetics-miscellaneous-women-accessories-indian-nude-women.png"
-                    alt="cosmetics"
-                    class="slider-section__img"
-                  />
-                </div>
-              </div>
-              <div class="slider-section__block">
-                <div class="slider-section__slide">
-                  <div class="block-description">
-                    <div class="block-description__about about">
-                      <h1 class="about__title title">
-                        Get Your Best Cosmetic Products Here
-                      </h1>
-                      <p class="about__subtitle subtitle">
-                        Lorem Ipsum is simply dummy text of the printing and
-                        typesetting industry. Lorem Ipsum has been the
-                        industry's standard dummy.
-                      </p>
-                    </div>
-                    <!-- Делайте покупки прямо сейчас - Shop Now -->
-                    <form action="#" class="search-form">
-                      <input
-                        type="text"
-                        class="search-form__text-field"
-                        placeholder="Search..."
-                      />
-                      <button class="search-form__btn default-btn">
-                        <img src="./dist/img/icons/Search.svg" alt="search" />
-                      </button>
-                    </form>
-                    <a
-                      href="#"
-                      type="button"
-                      class="search-form__btn-shop default-btn"
-                    >
-                      Shop Now
-                    </a>
-                  </div>
-                  <img
-                    src="./dist/img/image.png"
-                    alt="cosmetics"
-                    class="slider-section__img"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- кнопки слайда -->
-          <div class="control">
-            <button class="control__btn control__arrow-left">
-              <img
-                src="./dist/img/icons/arrows/Arrow - left.svg"
-                alt="arrow-left"
-                class="control__arrow"
-              />
-            </button>
-            <button class="control__btn control__arrow-right">
-              <img
-                src="./dist/img/icons/arrows/Arrow - Right.svg"
-                alt="arrow-right"
-                class="control__arrow"
-              />
-            </button>
           </div>
         </div>
-        <!-- /slider-section -->
+      </header>
+      <!-- /header -->
+
+      <!-- section-search -->
+      <div class="section-search">
+        <!-- окно (основа) -->
+        <div class="section-search__body">
+          <!-- полоска которая будет перемещаться -->
+          <div class="section-search__block">
+            <div class="section-search__slide">
+              <div class="block-description">
+                <div class="block-description__about about">
+                  <h1 class="about__title title">
+                    Get Your Best Cosmetic Products Here
+                  </h1>
+                  <p class="about__subtitle subtitle">
+                    Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum has been the industry's
+                    standard dummy
+                  </p>
+                </div>
+                <!-- Делайте покупки прямо сейчас - Shop Now -->
+                <form action="#" class="search-form">
+                  <input
+                    type="text"
+                    class="search-form__text-field"
+                    placeholder="Search..."
+                  />
+                  <button class="search-form__btn default-btn">
+                    <img src="./dist/img/icons/Search.svg" alt="search" />
+                  </button>
+                </form>
+                <a
+                  href="#"
+                  type="button"
+                  class="search-form__link-shop default-btn"
+                >
+                  Shop Now
+                </a>
+              </div>
+              <img
+                src="./dist/img/cosmetics.png"
+                alt="cosmetics"
+                class="section-search__img"
+              />
+            </div>
+          </div>
+        </div>
       </div>
-      <!-- /container-header -->
+      <!-- /section-search -->
 
       <!-- container -->
       <div class="container">
@@ -401,56 +299,141 @@
           </div>
         </div>
         <!--/section-products -->
+
         <!-- our-team -->
-        <div class="section-description section">
-          <div class="section-description__body">
-            <div class="our-team block-content">
-              <img
-                src="./dist/img/our team/designer.png"
-                alt="designer"
-                class="our-team__img content-img"
-              />
-              <div class="our-team__desc content">
-                <h3 class="our-team__title subtitle">Amazing Cosmetic</h3>
-                <div class="our-team__rating rating">* * * * *</div>
-                <div class="our-team__text">
-                  <img
-                    src="./dist/img/our team/“ left.svg"
-                    alt="mark"
-                    class="our-team__mark our-team__mark_bottom"
-                  />
-                  <p class="our-team__copyright subtitle">
-                    Lorem Ipsum is simply dummy text of the printing and
-                    typesetting industry. Lorem Ipsum has been the industry's
-                    standard dummy text ever since the 1500s, when an unknown
-                    printer took a galley of type and scrambled it to make a
-                    type specimen book
+        <div class="our-team section">
+          <div class="our-team__slider-body">
+            <div class="our-team__slider-track">
+              <div class="our-team__slide block-content">
+                <img
+                  src="./dist/img/our team/designer.png"
+                  alt="designer"
+                  class="our-team__img content-img"
+                />
+                <div class="our-team__desc content">
+                  <h3 class="our-team__title subtitle">Amazing Cosmetic</h3>
+                  <div class="our-team__rating rating">
+                    <div class="rating__item">★</div>
+                    <div class="rating__item">★</div>
+                    <div class="rating__item">★</div>
+                    <div class="rating__item">★</div>
+                    <div class="rating__item">★</div>
+                  </div>
+                  <div class="our-team__text">
                     <img
-                      src="./dist/img/our team/“ right.svg"
+                      src="./dist/img/our team/“ left.svg"
                       alt="mark"
-                      class="our-team__mark our-team__mark_top"
+                      class="our-team__mark our-team__mark_bottom"
                     />
-                  </p>
-                  <h3 class="our-team__title subtitle">Rusmin Islam</h3>
-                  <span class="post">Designer</span>
-                </div>
-                <div class="our-team__arrows block-btn">
-                  <button class="block-btn__arrow">
-                    <img
-                      src="./dist/img/our team/Arrow - left.svg"
-                      alt="button"
-                      class="block-btn__arrow-left"
-                    />
-                  </button>
-                  <button class="block-btn__arrow">
-                    <img
-                      src="./dist/img/our team/Arrow - right.svg"
-                      alt="button"
-                      class="block-btn__arrow-right"
-                    />
-                  </button>
+                    <p class="our-team__copyright subtitle">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book
+                      <img
+                        src="./dist/img/our team/“ right.svg"
+                        alt="mark"
+                        class="our-team__mark our-team__mark_top"
+                      />
+                    </p>
+                    <h3 class="our-team__title subtitle">Rusmin Islam</h3>
+                    <span class="post">Designer</span>
+                  </div>
                 </div>
               </div>
+              <div class="our-team__slide block-content">
+                <img
+                  src="./dist/img/our team/designer.png"
+                  alt="designer"
+                  class="our-team__img content-img"
+                />
+                <div class="our-team__desc content">
+                  <h3 class="our-team__title subtitle">Amazing Cosmetic</h3>
+                  <div class="our-team__rating rating">
+                    <div class="rating__item">1✩</div>
+                    <div class="rating__item">2✩</div>
+                    <div class="rating__item">3✩</div>
+                    <div class="rating__item">4✩</div>
+                    <div class="rating__item">5✩</div>
+                  </div>
+                  <div class="our-team__text">
+                    <img
+                      src="./dist/img/our team/“ left.svg"
+                      alt="mark"
+                      class="our-team__mark our-team__mark_bottom"
+                    />
+                    <p class="our-team__copyright subtitle">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book
+                      <img
+                        src="./dist/img/our team/“ right.svg"
+                        alt="mark"
+                        class="our-team__mark our-team__mark_top"
+                      />
+                    </p>
+                    <h3 class="our-team__title subtitle">Rusmin Islam</h3>
+                    <span class="post">Designer</span>
+                  </div>
+                </div>
+              </div>
+              <div class="our-team__slide block-content">
+                <img
+                  src="./dist/img/our team/designer.png"
+                  alt="designer"
+                  class="our-team__img content-img"
+                />
+                <div class="our-team__desc content">
+                  <h3 class="our-team__title subtitle">Amazing Cosmetic</h3>
+                  <div class="our-team__rating rating">
+                    <div class="rating__item">1✩</div>
+                    <div class="rating__item">2✩</div>
+                    <div class="rating__item">3✩</div>
+                    <div class="rating__item">4✩</div>
+                    <div class="rating__item">5✩</div>
+                  </div>
+                  <div class="our-team__text">
+                    <img
+                      src="./dist/img/our team/“ left.svg"
+                      alt="mark"
+                      class="our-team__mark our-team__mark_bottom"
+                    />
+                    <p class="our-team__copyright subtitle">
+                      Lorem Ipsum is simply dummy text of the printing and
+                      typesetting industry. Lorem Ipsum has been the industry's
+                      standard dummy text ever since the 1500s, when an unknown
+                      printer took a galley of type and scrambled it to make a
+                      type specimen book
+                      <img
+                        src="./dist/img/our team/“ right.svg"
+                        alt="mark"
+                        class="our-team__mark our-team__mark_top"
+                      />
+                    </p>
+                    <h3 class="our-team__title subtitle">Rusmin Islam</h3>
+                    <span class="post">Designer</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="our-team__arrows block-btn">
+              <button class="block-btn__arrow" id="btn-left">
+                <img
+                  src="./dist/img/our team/Arrow - left.svg"
+                  alt="button"
+                  class="block-btn__arrow-left"
+                />
+              </button>
+              <button class="block-btn__arrow" id="btn-right">
+                <img
+                  src="./dist/img/our team/Arrow - right.svg"
+                  alt="button"
+                  class="block-btn__arrow-right"
+                />
+              </button>
             </div>
           </div>
         </div>
