@@ -20,18 +20,14 @@
       <!-- header -->
       <header class="header">
         <div class="header__body">
-          <!-- элемент -->
-          <!-- <h2 class="header__logo logo">Dudeshape</h2> -->
           <img
             src="./dist/img/icons/logo/Dudeshape.svg"
             alt="logo"
             class="header__logo logo"
           />
-          <!-- блок -->
           <nav class="header__menu menu">
             <ul class="header__list menu__list">
               <li class="menu__item">
-                <!-- элемент link и модификатор active -->
                 <a href="#" class="menu__link menu__link_active">Home</a>
               </li>
               <li class="menu__item">
@@ -312,12 +308,14 @@
                 />
                 <div class="our-team__desc content">
                   <h3 class="our-team__title subtitle">Amazing Cosmetic</h3>
-                  <div class="our-team__rating rating">
-                    <div class="rating__item">★</div>
-                    <div class="rating__item">★</div>
-                    <div class="rating__item">★</div>
-                    <div class="rating__item">★</div>
-                    <div class="rating__item">★</div>
+                  <!-- при нажатии на звездочки, это значение нужно сохранить в обертку (data атрибут), и само значение
+                   нужно взять из data атрибута звездочки на которую нажали -->
+                  <div class="our-team__rating rating" data-total-value="0">
+                    <div class="rating__item" data-item-value="5">★</div>
+                    <div class="rating__item" data-item-value="4">★</div>
+                    <div class="rating__item" data-item-value="3">★</div>
+                    <div class="rating__item" data-item-value="2">★</div>
+                    <div class="rating__item" data-item-value="1">★</div>
                   </div>
                   <div class="our-team__text">
                     <img
@@ -350,12 +348,12 @@
                 />
                 <div class="our-team__desc content">
                   <h3 class="our-team__title subtitle">Amazing Cosmetic</h3>
-                  <div class="our-team__rating rating">
-                    <div class="rating__item">1✩</div>
-                    <div class="rating__item">2✩</div>
-                    <div class="rating__item">3✩</div>
-                    <div class="rating__item">4✩</div>
-                    <div class="rating__item">5✩</div>
+                  <div class="our-team__rating rating" data-total-value="0">
+                    <div class="rating__item" data-item-value="5">★</div>
+                    <div class="rating__item" data-item-value="4">★</div>
+                    <div class="rating__item" data-item-value="3">★</div>
+                    <div class="rating__item" data-item-value="2">★</div>
+                    <div class="rating__item" data-item-value="1">★</div>
                   </div>
                   <div class="our-team__text">
                     <img
@@ -388,12 +386,12 @@
                 />
                 <div class="our-team__desc content">
                   <h3 class="our-team__title subtitle">Amazing Cosmetic</h3>
-                  <div class="our-team__rating rating">
-                    <div class="rating__item">1✩</div>
-                    <div class="rating__item">2✩</div>
-                    <div class="rating__item">3✩</div>
-                    <div class="rating__item">4✩</div>
-                    <div class="rating__item">5✩</div>
+                  <div class="our-team__rating rating" data-total-value="0">
+                    <div class="rating__item" data-item-value="5">★</div>
+                    <div class="rating__item" data-item-value="4">★</div>
+                    <div class="rating__item" data-item-value="3">★</div>
+                    <div class="rating__item" data-item-value="2">★</div>
+                    <div class="rating__item" data-item-value="1">★</div>
                   </div>
                   <div class="our-team__text">
                     <img
