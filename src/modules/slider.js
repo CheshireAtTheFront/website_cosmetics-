@@ -1,7 +1,7 @@
 const slider = () => {
-  const bodySlider = document.querySelector(".our-team__slider-body");
-  const sliderTrack = document.querySelector(".our-team__slider-track");
-  const itemsSlider = document.querySelectorAll(".our-team__slide");
+  const bodySlider = document.querySelector(".about-us__slider-body");
+  const sliderTrack = document.querySelector(".about-us__slider-track");
+  const itemsSlider = document.querySelectorAll(".about-us__slide");
   // кнопки
   const arrowLeft = document.querySelector("#btn-left");
   const arrowRight = document.querySelector("#btn-right");

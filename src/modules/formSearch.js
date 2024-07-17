@@ -1,5 +1,5 @@
 const formSearch = () => {
-  const searchForm = document.querySelector(".search-form__text-field");
+  const searchForm = document.querySelector(".search-form__btn");
 
   searchForm.addEventListener("click", (e) => {
     e.preventDefault();
