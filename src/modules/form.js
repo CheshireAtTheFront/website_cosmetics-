@@ -13,21 +13,17 @@ const form = ({ idForm }) => {
       switch (input.name) {
         case "user_email":
           if (/[^a-z0-9@-_.!~*']/g.test(input.value) || input.value == "") {
-            console.log(false);
             input.style.border = "1.5px solid red";
             success = false;
           } else {
-            console.log(true);
             input.style.border = "1px solid #808080";
           }
           break;
         case "user_password":
           if (/[^a-z0-9@-_.!~*']/g.test(input.value) || input.value == "") {
-            console.log(false);
             input.style.border = "1.5px solid red";
             success = false;
           } else {
-            console.log(true);
             input.style.border = "1px solid #808080";
           }
       }
