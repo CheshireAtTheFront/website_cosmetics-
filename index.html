@@ -81,21 +81,21 @@
                   standard dummy
                 </p>
               </div>
-              <!-- Делайте покупки прямо сейчас - Shop Now -->
-              <form action="#" class="search-form">
+              <form class="search-form" id="form1">
                 <input
                   type="text"
+                  name="search"
                   class="search-form__text-field"
                   placeholder="Search..."
                 />
-                <button class="search-form__btn default-btn">
+                <button type="button" class="search-form__btn default-btn">
                   <img src="./dist/img/icons/Search.svg" alt="search" />
                 </button>
               </form>
               <a
                 href="#"
                 type="button"
-                class="search-form__link-shop default-btn"
+                class="search-form__link-shop link default-btn"
               >
                 Shop Now
               </a>
@@ -292,7 +292,9 @@
                       printing and typesetting industry.
                     </p>
                   </div>
-                  <a href="#" type="button" class="default-btn"> Shop Now </a>
+                  <a href="#" type="button" class="link default-btn">
+                    Shop Now
+                  </a>
                 </div>
                 <img
                   src="./dist/img/products/Rectangle 8.png"
@@ -456,14 +458,14 @@
             <h3 class="footer-form__title title">
               Subscribe to Get Our Letest News
             </h3>
-            <form action="#" class="subscribe-form">
+            <form action="#" class="subscribe-form" id="form2">
               <input
-                type="text"
-                name="text"
+                type="email"
+                name="user_email"
                 class="subscribe-form__text-field"
                 placeholder="Enter email"
               />
-              <button type="submit" class="default-btn subscribe-form__btn">
+              <button type="submit" class="subscribe-form__btn default-btn">
                 Subscribe
               </button>
             </form>
@@ -485,7 +487,9 @@
               <nav class="footer__menu menu">
                 <ul class="footer__list menu__list">
                   <li class="menu__item">
-                    <a href="#" class="menu__link menu__link_active">Home</a>
+                    <a href="#home" class="menu__link menu__link_active"
+                      >Home</a
+                    >
                   </li>
                   <li class="menu__item">
                     <a href="#products" class="menu__link">Products</a>
@@ -504,7 +508,7 @@
               </div>
               <ul class="footer__social-network social-network">
                 <li class="social-network__item">
-                  <a href="#"
+                  <a href="#" class="link"
                     ><img
                       src="./dist/img/icons/social-network/facebook.svg"
                       alt="facebook"
@@ -512,7 +516,7 @@
                   /></a>
                 </li>
                 <li class="social-network__item">
-                  <a href="#"
+                  <a href="#" class="link"
                     ><img
                       src="./dist/img/icons/social-network/twitter.svg"
                       alt="tweeter"
@@ -520,7 +524,7 @@
                   /></a>
                 </li>
                 <li class="social-network__item">
-                  <a href="#"
+                  <a href="#" class="link"
                     ><img
                       src="./dist/img/icons/social-network/instagram.svg"
                       alt="instogram"
@@ -544,19 +548,25 @@
           <li class="menu-side__item">
             <!-- элемент link и модификатор active -->
             <a
-              href="#"
+              href="#home"
               class="menu__link menu__link_active menu-side__link_white"
               >Home</a
             >
           </li>
           <li class="menu-side__item">
-            <a href="#" class="menu__link menu-side__link_white">Products</a>
+            <a href="#products" class="menu__link menu-side__link_white"
+              >Products</a
+            >
           </li>
           <li class="menu-side__item">
-            <a href="#" class="menu__link menu-side__link_white">About Us</a>
+            <a href="#about-us" class="menu__link menu-side__link_white"
+              >About Us</a
+            >
           </li>
           <li class="menu-side__item">
-            <a href="#" class="menu__link menu-side__link_white">Contact Us</a>
+            <a href="#contact-us" class="menu__link menu-side__link_white"
+              >Contact Us</a
+            >
           </li>
         </ul>
       </div>
@@ -566,63 +576,28 @@
     <!-- pop up -->
     <div class="popup">
       <div class="popup__container">
-        <!-- Войти -->
         <div class="popup__body">
           <p class="popup__title">Enter</p>
-          <form id="form-entry" name="user_form" class="popup__form">
-            <input
-              type="text"
-              name="user_name"
-              class="popup__name subscribe-form__text-field"
-              placeholder="Enter name"
-              required
-            />
+          <form action="#" class="popup__form" id="form3">
             <input
               type="email"
               name="user_email"
               class="popup__email subscribe-form__text-field"
               placeholder="Enter email"
-              required
+            />
+            <input
+              type="password"
+              name="user_password"
+              class="popup__password subscribe-form__text-field"
+              placeholder="Enter password"
             />
             <button type="submit" class="popup__btn-enter default-btn">
-              Enter
+              Submit
             </button>
-            <!-- <button type="submit" class="popup__btn-register default-btn">
-              Register
-            </button> -->
           </form>
           <div class="popup__close">X</div>
           <!--&#10006  -->
         </div>
-        <!-- Зарегистрироваться -->
-        <!-- <div class="popup__body popup__body_none">
-          <p class="popup__title">Register</p>
-          <form id="form-register" name="user_form" class="popup__form">
-            <input
-              type="text"
-              name="user_name"
-              class="popup__name subscribe-form__text-field"
-              placeholder="Enter name"
-              required
-            />
-            <input
-              type="text"
-              name="user_tel"
-              class="popup__telephone subscribe-form__text-field"
-              placeholder="Enter telephone"
-              required
-            />
-            <input
-              type="text"
-              name="user_email"
-              class="popup__email subscribe-form__text-field"
-              placeholder="Enter email"
-              required
-            />
-            <button type="submit" class="popup__btn-register popup__btn-register_mrg default-btn">Register</button>
-          </form>
-          <div class="popup__close">&#10006</div>
-        </div> -->
       </div>
     </div>
     <!-- /pop up -->

@@ -292,7 +292,7 @@ ul {
 
 .search-form__text-field,
 .subscribe-form__text-field {
-  width: inherit;
+  width: 100%;
   height: inherit;
   border: none;
 }
@@ -880,6 +880,10 @@ ul {
   .block-btn {
     width: 120px;
   }
+
+  .footer-form__title {
+    max-width: 600px;
+  }
 }
 
 @media (max-width: 912px) {
@@ -954,6 +958,10 @@ ul {
   .cart__btn-now {
     margin-right: 24px;
   }
+
+  .footer-form {
+    flex-wrap: wrap;
+  }
 }
 
 @media (max-width: 740px) {
@@ -977,6 +985,14 @@ ul {
 
   .section-evidence__block {
     padding: 58px 20px;
+  }
+
+  .footer__block {
+    flex-wrap: wrap;
+  }
+
+  .footer__desc {
+    margin-bottom: 40px;
   }
 }
 
@@ -1059,6 +1075,10 @@ ul {
 
   .about-us__mark_top {
     top: -4px;
+  }
+
+  .footer-form {
+    padding: 0 0 48px;
   }
 }
 

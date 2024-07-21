@@ -1,47 +1,42 @@
 const form = ({ idForm }) => {
   const popup = document.querySelector(".popup");
-  const formEntry = document.getElementById(idForm);
+  const form = document.getElementById(idForm);
   const statusBlock = document.createElement("div");
   const loadText = "Загрузка...";
   const errorText = "Ошибка...";
   const successText = "Добро пожаловать!";
 
-  // валидация формы
   const validate = (list) => {
     let success = true;
 
     list.forEach((input) => {
       switch (input.name) {
-        case "user_name":
-          if (/[а-яА-Я\s]/g.test(input.value)) {
+        case "user_email":
+          if (/[^a-z0-9@-_.!~*']/g.test(input.value) || input.value == "") {
+            console.log(false);
             input.style.border = "1.5px solid red";
             success = false;
           } else {
+            console.log(true);
             input.style.border = "1px solid #808080";
           }
           break;
-        case "user_email":
-          if (/[^a-z0-9@-_.!~*']/g.test(input.value)) {
+        case "user_password":
+          if (/[^a-z0-9@-_.!~*']/g.test(input.value) || input.value == "") {
+            console.log(false);
             input.style.border = "1.5px solid red";
             success = false;
           } else {
+            console.log(true);
             input.style.border = "1px solid #808080";
           }
-        // case "user_tel":
-        //   if (/[^+()-\d]/g.test(input.value)) {
-        //     input.style.border = "1.5px solid red";
-        //     success = false;
-        //   } else {
-        //     input.style.border = "1px solid #808080";
-        //   }
-        //   break;
       }
     });
     return success;
   };
 
   const blockNotification = () => {
-    formEntry.append(statusBlock);
+    form.append(statusBlock);
     statusBlock.style.marginTop = 20 + "px";
   };
 
@@ -53,14 +48,15 @@ const form = ({ idForm }) => {
         // для бэкенд разработчика,в каком виде он желает увидеть данные
         "Content-type": "application/json; charset=UTF-8",
       },
-      // для удобного спользования функции sendData, этот метод then, лучше писать здесь
+      // для удобного использования функции sendData, этот метод then, лучше писать здесь
       // ответ от сервера
     }).then((response) => response.json());
   };
 
   const submitForm = () => {
-    const formElements = formEntry.querySelectorAll("input");
-    const formData = new FormData(formEntry);
+    const formElements = form.querySelectorAll("input");
+
+    const formData = new FormData(form);
     const formUser = {};
 
     statusBlock.textContent = loadText;
@@ -86,11 +82,11 @@ const form = ({ idForm }) => {
           statusBlock.textContent = errorText;
         });
     } else {
-      statusBlock.textContent = "Данные не вылидны";
+      statusBlock.textContent = "The data is not valid";
     }
   };
 
-  formEntry.addEventListener("submit", (e) => {
+  form.addEventListener("submit", (e) => {
     e.preventDefault();
     submitForm();
   });
