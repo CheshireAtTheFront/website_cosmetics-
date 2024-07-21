@@ -45,11 +45,8 @@ const form = ({ idForm }) => {
       method: "POST",
       body: data,
       headers: {
-        // для бэкенд разработчика,в каком виде он желает увидеть данные
         "Content-type": "application/json; charset=UTF-8",
       },
-      // для удобного использования функции sendData, этот метод then, лучше писать здесь
-      // ответ от сервера
     }).then((response) => response.json());
   };
 
@@ -93,6 +90,3 @@ const form = ({ idForm }) => {
 };
 
 export default form;
-
-/* Модуль который можно нескольео раз вызвать из index.js, 
- на каждую форму по разу и передать в этот модуль id самой формы, чтобы именно с этой формой модуль работал */

@@ -123,7 +123,6 @@ ul {
   color: var(--base-color-hover);
 }
 
-/* иконки в шапке */
 .block-user__icon,
 .control__arrow-left,
 .control__arrow-right {
@@ -355,7 +354,7 @@ ul {
   color: var(--white-color);
 }
 
-/* блок партнеров */
+/* блок "партнеров" */
 .section-partners__body {
   display: flex;
   justify-content: space-between;
@@ -376,12 +375,13 @@ ul {
   margin-top: 130px;
 }
 
-/* блок продукции */
+/* блок "продукции" */
 .block-products__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .block-products__desc {
   margin-bottom: 60px;
   max-width: 714px;
@@ -461,7 +461,7 @@ ul {
   color: var(--black-color);
 }
 
-/* блок фактов */
+/* блок "фактов" */
 .section-evidence {
   height: auto;
 }
@@ -494,7 +494,7 @@ ul {
   font-size: 1.5rem;
 }
 
-/* блок описания */
+/* блок "контента" */
 .section-description__body,
 .about-us__slider-body {
   margin-bottom: 130px;
@@ -537,7 +537,7 @@ ul {
   max-width: 600px;
 }
 
-/* about-us-слайд */
+/* блок "о нас" -слайд */
 .about-us__slider-body {
   position: relative;
   overflow: hidden;
@@ -564,7 +564,6 @@ ul {
 
 .rating {
   display: inline-flex;
-  /* перевернуть звезды в обратную сторону, для верно закрашивания */
   flex-direction: row-reverse;
   justify-content: space-between;
   width: 168px;
@@ -579,7 +578,6 @@ ul {
 }
 
 .rating__item:hover,
-/* последующие rating__item будут менять цвет */
 .rating__item:hover ~ .rating__item {
   color: #ffc046;
 }
